@@ -1,0 +1,41 @@
+---
+import PresentationLayout from '../layouts/PresentationLayout.astro';
+import Navigation from '../components/Navigation.svelte';
+import Slide01Hero from '../components/slides/Slide01Hero.svelte';
+import Slide02TheProblem from '../components/slides/Slide02TheProblem.svelte';
+import Slide03WhatIsSubagent from '../components/slides/Slide03WhatIsSubagent.svelte';
+import Slide04OrchestrationPatterns from '../components/slides/Slide04OrchestrationPatterns.svelte';
+import Slide05OrchestrationBenefits from '../components/slides/Slide05OrchestrationBenefits.svelte';
+import Slide06SkillsConcept from '../components/slides/Slide06SkillsConcept.svelte';
+import Slide07SkillAnatomy from '../components/slides/Slide07SkillAnatomy.svelte';
+import Slide08ReferenceSkills from '../components/slides/Slide08ReferenceSkills.svelte';
+import Slide09SkillsPractice from '../components/slides/Slide09SkillsPractice.svelte';
+import Slide10SubagentSkillsSynergy from '../components/slides/Slide10SubagentSkillsSynergy.svelte';
+import Slide11ContextManagement from '../components/slides/Slide11ContextManagement.svelte';
+import Slide12RealWorldPatterns from '../components/slides/Slide12RealWorldPatterns.svelte';
+import Slide13CommonPitfalls from '../components/slides/Slide13CommonPitfalls.svelte';
+import Slide14BestPractices from '../components/slides/Slide14BestPractices.svelte';
+import Slide15WorkshopPreview from '../components/slides/Slide15WorkshopPreview.svelte';
+import Slide16Closing from '../components/slides/Slide16Closing.svelte';
+---
+
+<PresentationLayout title="Subagentes y Skills en Agentes de IA">
+  <Navigation client:load>
+    <Slide01Hero />
+    <Slide02TheProblem client:load />
+    <Slide03WhatIsSubagent client:load />
+    <Slide04OrchestrationPatterns client:load />
+    <Slide05OrchestrationBenefits client:load />
+    <Slide06SkillsConcept client:load />
+    <Slide07SkillAnatomy client:load />
+    <Slide08ReferenceSkills client:load />
+    <Slide09SkillsPractice client:load />
+    <Slide10SubagentSkillsSynergy client:load />
+    <Slide11ContextManagement client:load />
+    <Slide12RealWorldPatterns client:load />
+    <Slide13CommonPitfalls client:load />
+    <Slide14BestPractices client:load />
+    <Slide15WorkshopPreview client:load />
+    <Slide16Closing client:load />
+  </Navigation>
+</PresentationLayout>
