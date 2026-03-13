@@ -34,7 +34,7 @@
     </div>
 
     <div class="author-card card-glass">
-      <img src="https://www.gravatar.com/avatar/8f3e1eb0e0e5b5b5b5b5b5b5b5b5b5b5?s=120" alt="Alejandro de la Fuente" class="author-avatar" />
+      <img src="https://www.gravatar.com/avatar/8461e0b8674185c1df153079e820504b?s=120" alt="Alejandro de la Fuente" class="author-avatar" />
       <div class="author-info">
         <p class="author-name">Alejandro de la Fuente</p>
         <p class="author-role">Technical Leader · NTT Data · GDE</p>

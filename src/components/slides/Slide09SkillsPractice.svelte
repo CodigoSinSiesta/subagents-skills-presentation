@@ -4,30 +4,34 @@
   let slideElement: HTMLElement;
   onMount(() => { animateSlideEntrance(slideElement); });
 
-  const sections = [
+  const steps = [
     {
-      title: 'CLAUDE.md',
-      desc: 'El archivo que define las reglas de tu proyecto para CUALQUIER agente de IA',
-      code: `# Mi Proyecto
-## Stack
-## Arquitectura
-## Reglas
-## Skills`,
-      label: 'Usado por: Claude Code, Cursor, todos los agentes compatibles'
+      num: 1,
+      title: 'Identifica el contexto',
+      desc: '¿Qué tecnología/framework usas frecuentemente?',
+      example: 'React 19, Tailwind 4, Zustand, Django...',
+      tip: 'Empieza por lo que más repites'
     },
     {
-      title: 'AGENTS.md',
-      desc: 'Instrucciones más granulares, por directorio o por agente',
-      code: `# Instructions for agents
-## Frontend team
-## Backend team`,
-      label: 'Herencia: AGENTS.md en subdirectorios hereda del padre'
+      num: 2,
+      title: 'Crea la estructura',
+      desc: 'Crea el directorio y archivo SKILL.md',
+      example: '~/.claude/skills/mi-skill/SKILL.md',
+      tip: 'El nombre del directorio = nombre del skill'
     },
     {
-      title: '.claude/skills/',
-      desc: 'Skills reutilizables como archivos',
-      code: `~/.claude/skills/react-19/SKILL.md`,
-      label: 'User-level vs Project-level skills'
+      num: 3,
+      title: 'Define el frontmatter',
+      desc: 'Nombre y descripción para que el agente sepa cuándo usarlo',
+      example: 'name: react-19\ndescription: Use when working with React 19...',
+      tip: 'La descripción es clave para la activación automática'
+    },
+    {
+      num: 4,
+      title: 'Añade contenido útil',
+      desc: 'Patrones, reglas, ejemplos de código',
+      example: '## Server Components\n### use() Hook\n### Actions',
+      tip: 'Incluye DOs y DON\'Ts'
     }
   ];
 </script>
@@ -37,22 +41,30 @@
 
   <div class="slide-content">
     <div class="slide-header">
-      <span class="label">Implementación</span>
-      <h2 class="title">Skills en la <span class="highlight">Práctica</span></h2>
-      <p class="subtitle">CLAUDE.md, AGENTS.md y el ecosistema real de skills.</p>
+      <span class="label">Workshop</span>
+      <h2 class="title">Crea tu <span class="highlight">Primer Skill</span></h2>
+      <p class="subtitle">4 pasos para tener un skill funcional en 5 minutos.</p>
     </div>
 
-    <div class="sections-grid">
-      {#each sections as section}
-        <div class="section-card">
-          <h3 class="section-title">{section.title}</h3>
-          <p class="section-desc">{section.desc}</p>
-          <div class="code-block">
-            <pre><code>{section.code}</code></pre>
+    <div class="steps-container">
+      {#each steps as step}
+        <div class="step-card">
+          <div class="step-number">{step.num}</div>
+          <div class="step-content">
+            <h3 class="step-title">{step.title}</h3>
+            <p class="step-desc">{step.desc}</p>
+            <div class="step-example">
+              <code>{step.example}</code>
+            </div>
+            <span class="step-tip">💡 {step.tip}</span>
           </div>
-          <span class="section-label">{section.label}</span>
         </div>
       {/each}
+    </div>
+
+    <div class="cta-box">
+      <p><strong>Tu reto:</strong> Antes de acabar esta sesión, crea un skill para tu framework favorito.</p>
+      <span class="cta-path">~/.claude/skills/[tu-framework]/SKILL.md</span>
     </div>
   </div>
 </div>
@@ -124,16 +136,16 @@
     font-family: var(--font-mono);
   }
 
-  /* Sections grid */
-  .sections-grid {
+  /* Steps container */
+  .steps-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
   }
 
-  .section-card {
+  .step-card {
     display: flex;
-    flex-direction: column;
+    gap: var(--spacing-md);
     padding: var(--spacing-lg);
     background: rgba(30, 58, 138, 0.2);
     border: 1px solid rgba(96, 165, 250, 0.15);
@@ -141,58 +153,112 @@
     transition: all var(--transition-fast);
   }
 
-  .section-card:hover {
+  .step-card:hover {
     background: rgba(30, 58, 138, 0.35);
     border-color: rgba(96, 165, 250, 0.3);
     transform: translateY(-2px);
   }
 
-  .section-title {
-    font-size: 1.15rem;
+  .step-number {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-accent-bright), var(--color-electric));
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .step-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    flex: 1;
+  }
+
+  .step-title {
+    font-size: 1rem;
     font-weight: 700;
     color: var(--color-electric);
-    margin-bottom: var(--spacing-sm);
-    font-family: var(--font-mono);
+    margin: 0;
   }
 
-  .section-desc {
-    font-size: 0.85rem;
+  .step-desc {
+    font-size: 0.82rem;
     color: var(--color-neutral-light);
     opacity: 0.8;
-    margin-bottom: var(--spacing-md);
-    line-height: 1.5;
+    margin: 0;
+    line-height: 1.4;
   }
 
-  .code-block {
+  .step-example {
     background: rgba(10, 22, 40, 0.6);
     border: 1px solid rgba(96, 165, 250, 0.1);
     border-radius: var(--radius-sm);
-    padding: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
-    flex-grow: 1;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
   }
 
-  .code-block pre,
-  .code-block code {
-    margin: 0;
-    padding: 0;
+  .step-example code {
     font-family: var(--font-mono);
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     color: var(--color-electric);
     opacity: 0.9;
-    line-height: 1.6;
     white-space: pre-wrap;
     word-break: break-word;
   }
 
-  .section-label {
-    font-size: 0.75rem;
+  .step-tip {
+    font-size: 0.72rem;
     color: var(--color-neutral-light);
-    opacity: 0.6;
+    opacity: 0.7;
     font-style: italic;
+    margin-top: auto;
+  }
+
+  /* CTA box */
+  .cta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+
+  .cta-box p {
+    font-size: 0.9rem;
+    color: var(--color-neutral-light);
+    margin: 0;
+  }
+
+  .cta-box strong {
+    color: #22c55e;
+  }
+
+  .cta-path {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-sm);
   }
 
   /* Responsive */
+  @media (max-width: 1024px) {
+    .steps-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (max-width: 768px) {
     .slide-content {
       padding: var(--spacing-lg) var(--spacing-md);
@@ -202,18 +268,17 @@
     .title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
     .subtitle { font-size: 0.9rem; }
 
-    .sections-grid {
+    .steps-container {
       grid-template-columns: 1fr;
       gap: var(--spacing-md);
     }
 
-    .section-card { padding: var(--spacing-md); }
-    .section-title { font-size: 1rem; }
-    .section-desc { font-size: 0.82rem; }
-    .code-block { padding: var(--spacing-sm); }
-    .code-block pre,
-    .code-block code { font-size: 0.75rem; }
-    .section-label { font-size: 0.7rem; }
+    .step-card { padding: var(--spacing-md); }
+    .step-number { width: 32px; height: 32px; font-size: 1rem; }
+    .step-title { font-size: 0.95rem; }
+    .step-desc { font-size: 0.78rem; }
+    .step-example code { font-size: 0.68rem; }
+    .step-tip { font-size: 0.68rem; }
   }
 
   @media (max-width: 480px) {
@@ -226,13 +291,20 @@
     .title { font-size: clamp(1.4rem, 6vw, 1.8rem); }
     .subtitle { font-size: 0.8rem; }
 
-    .section-card { padding: var(--spacing-sm) var(--spacing-md); }
-    .section-title { font-size: 0.95rem; }
-    .section-desc { font-size: 0.78rem; }
-    .code-block { padding: var(--spacing-xs); }
-    .code-block pre,
-    .code-block code { font-size: 0.7rem; }
-    .section-label { font-size: 0.65rem; }
+    .step-card {
+      padding: var(--spacing-sm) var(--spacing-md);
+      gap: var(--spacing-sm);
+    }
+    .step-number { width: 28px; height: 28px; font-size: 0.9rem; }
+    .step-title { font-size: 0.9rem; }
+    .step-desc { font-size: 0.75rem; }
+    .step-example { padding: var(--spacing-xs); }
+    .step-example code { font-size: 0.62rem; }
+    .step-tip { font-size: 0.62rem; }
+
+    .cta-box { padding: var(--spacing-md); }
+    .cta-box p { font-size: 0.82rem; }
+    .cta-path { font-size: 0.78rem; }
   }
 
   @media (max-width: 390px) {
@@ -244,30 +316,30 @@
     .title { font-size: clamp(1.2rem, 6vw, 1.6rem); }
     .subtitle { font-size: 0.75rem; }
 
-    .section-card { padding: var(--spacing-sm); }
-    .section-title { font-size: 0.9rem; }
-    .section-desc { font-size: 0.72rem; }
-    .code-block pre,
-    .code-block code { font-size: 0.65rem; }
-    .section-label { font-size: 0.6rem; }
+    .step-card { padding: var(--spacing-sm); }
+    .step-number { width: 26px; height: 26px; font-size: 0.85rem; }
+    .step-title { font-size: 0.85rem; }
+    .step-desc { font-size: 0.7rem; }
+    .step-example code { font-size: 0.58rem; }
+    .step-tip { font-size: 0.58rem; }
+
+    .cta-box { padding: var(--spacing-sm); }
+    .cta-box p { font-size: 0.75rem; }
+    .cta-path { font-size: 0.7rem; }
   }
 
   @media (max-height: 900px) and (min-width: 769px) {
     .slide-content {
-      padding: 12px var(--spacing-content);
+      padding: var(--spacing-md) var(--spacing-content);
       gap: var(--spacing-md);
     }
 
-    .slide-header { margin-bottom: var(--spacing-sm); }
-    .title { font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
-
-    .sections-grid { gap: var(--spacing-md); }
-    .section-card { padding: var(--spacing-md); }
-    .section-title { font-size: 1rem; }
-    .section-desc { font-size: 0.82rem; }
-    .code-block { padding: var(--spacing-sm); }
-    .code-block pre,
-    .code-block code { font-size: 0.72rem; }
-    .section-label { font-size: 0.7rem; }
+    .steps-container { gap: var(--spacing-md); }
+    .step-card { padding: var(--spacing-md); }
+    .step-number { width: 36px; height: 36px; font-size: 1.1rem; }
+    .step-title { font-size: 0.95rem; }
+    .step-desc { font-size: 0.78rem; }
+    .step-example code { font-size: 0.68rem; }
+    .step-tip { font-size: 0.68rem; }
   }
 </style>
