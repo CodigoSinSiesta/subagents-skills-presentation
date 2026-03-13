@@ -37,7 +37,7 @@
       <img src="https://www.gravatar.com/avatar/8461e0b8674185c1df153079e820504b?s=120" alt="Alejandro de la Fuente" class="author-avatar" />
       <div class="author-info">
         <p class="author-name">Alejandro de la Fuente</p>
-        <p class="author-role">Technical Leader · NTT Data · GDE</p>
+        <p class="author-role">Technical Leader · NTT Data · GDNE</p>
         <div class="author-links">
           <a href="https://tellmealex.dev" target="_blank" rel="noopener noreferrer" class="author-link">🌐</a>
           <a href="https://github.com/TellMeAlex" target="_blank" rel="noopener noreferrer" class="author-link">🐙</a>

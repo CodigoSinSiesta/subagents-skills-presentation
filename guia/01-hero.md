@@ -7,7 +7,7 @@
 - Bienvenida a la charla sobre Subagentes y Skills en Agentes de IA
 - Tema principal: Cómo escalar agentes más allá del monolito
 - Presentación del ponente: Alejandro de la Fuente
-- Cargo: Technical Leader · NTT Data · GDE
+- Cargo: Technical Leader · NTT Data · GDNE
 - Enlaces: tellmealex.dev, GitHub, LinkedIn
 - Estructura de la charla: problema → orquestación → skills → patrones reales
 - La analogía clave: Tú eres el director de orquesta, los subagentes son los músicos
