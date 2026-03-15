@@ -213,9 +213,9 @@
             {:else if agent.id === 'kiro'}
               <div class="flow-visual">
                 <div class="flow-spec">
-                  <div class="flow-item" style="border-color: rgba(34,197,94,0.6); box-shadow: 0 0 8px rgba(34,197,94,0.3);">
+                  <div class="flow-item green">
                     <span class="flow-icon">📝</span>
-                    <span class="flow-label" style="color: #4ade80;">Spec</span>
+                    <span class="flow-label">Spec</span>
                   </div>
                   <div class="flow-arrow-h">→</div>
                   <div class="flow-item">
@@ -635,6 +635,16 @@
     background: rgba(59, 130, 246, 0.1);
     border: 1px solid rgba(59, 130, 246, 0.2);
     border-radius: var(--radius-sm);
+  }
+
+  .flow-item.green {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.3);
+  }
+
+  .flow-item.green .flow-label {
+    color: #4ade80;
   }
 
   .flow-item.small {
