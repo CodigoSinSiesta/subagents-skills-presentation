@@ -100,7 +100,7 @@
     padding: var(--spacing-2xl) var(--spacing-content);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
   }
 
   .slide-header { text-align: center; }
@@ -143,16 +143,16 @@
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-md);
-    padding: var(--spacing-sm) var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-xl);
   }
 
-  .thesis-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+  .thesis-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
 
   .thesis p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--color-neutral-light);
-    opacity: 0.85;
-    line-height: 1.55;
+    opacity: 0.88;
+    line-height: 1.6;
     margin-bottom: 0;
     font-style: italic;
   }
@@ -163,36 +163,37 @@
   .roles-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
   }
 
   .role {
     display: flex;
     align-items: flex-start;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-md);
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    min-height: 96px;
   }
 
-  .role-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
+  .role-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 1px; }
 
   .role-body {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
   }
 
   .role-name {
     font-family: var(--font-display);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 800;
     color: var(--color-neutral-light);
   }
 
   .role-desc {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     color: var(--color-neutral-light);
-    opacity: 0.65;
-    line-height: 1.4;
+    opacity: 0.72;
+    line-height: 1.5;
   }
 
   /* Levers */
@@ -211,14 +212,14 @@
   .levers-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
   }
 
   .lever {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    padding: var(--spacing-sm) var(--spacing-md);
+    gap: 6px;
+    padding: var(--spacing-md) var(--spacing-lg);
     background: rgba(30, 58, 138, 0.18);
     border: 1px solid rgba(96, 165, 250, 0.15);
     border-radius: var(--radius-sm);
@@ -240,7 +241,7 @@
 
   .lever-name {
     font-family: var(--font-display);
-    font-size: 0.82rem;
+    font-size: 0.92rem;
     font-weight: 700;
     color: var(--color-neutral-light);
     flex: 1;
@@ -274,10 +275,10 @@
   }
 
   .lever-desc {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     color: var(--color-neutral-light);
-    opacity: 0.7;
-    line-height: 1.45;
+    opacity: 0.72;
+    line-height: 1.5;
   }
 
   /* Bottom insight */
@@ -285,19 +286,19 @@
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-md);
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
     background: rgba(59, 130, 246, 0.08);
     border: 1px solid rgba(96, 165, 250, 0.2);
     border-radius: var(--radius-sm);
   }
 
-  .insight-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  .insight-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
 
   .bottom-insight p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--color-neutral-light);
-    opacity: 0.85;
-    line-height: 1.55;
+    opacity: 0.88;
+    line-height: 1.6;
     margin-bottom: 0;
   }
 

@@ -123,7 +123,7 @@
     padding: var(--spacing-2xl) var(--spacing-content);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-md);
+    gap: var(--spacing-lg);
   }
 
   .slide-header { text-align: center; }
@@ -164,7 +164,7 @@
   /* Quote */
   .quote-block {
     position: relative;
-    padding: var(--spacing-sm) var(--spacing-xl);
+    padding: var(--spacing-md) var(--spacing-2xl);
     background: rgba(167, 139, 250, 0.06);
     border-left: 3px solid #a78bfa;
     border-radius: var(--radius-sm);
@@ -182,10 +182,10 @@
   }
 
   .quote-block p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--color-neutral-light);
-    opacity: 0.88;
-    line-height: 1.55;
+    opacity: 0.9;
+    line-height: 1.6;
     margin-bottom: 0;
     font-style: italic;
   }
@@ -202,8 +202,9 @@
   .source {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-md) var(--spacing-lg);
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    min-height: 200px;
   }
 
   .source-head {
@@ -262,11 +263,12 @@
   }
 
   .source-claim {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--color-neutral-light);
-    opacity: 0.82;
-    line-height: 1.5;
+    opacity: 0.85;
+    line-height: 1.6;
     margin-bottom: 0;
+    flex: 1;
   }
 
   .source-origin {
@@ -300,11 +302,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
-    padding: var(--spacing-sm) var(--spacing-md);
+    gap: 6px;
+    padding: var(--spacing-md) var(--spacing-lg);
     background: rgba(30, 58, 138, 0.18);
     border: 1px solid rgba(96, 165, 250, 0.15);
     border-radius: var(--radius-sm);
+    min-height: 120px;
   }
 
   .flow-step {
@@ -314,20 +317,20 @@
     opacity: 0.7;
   }
 
-  .flow-icon { font-size: 1.2rem; }
+  .flow-icon { font-size: 1.4rem; }
 
   .flow-name {
     font-family: var(--font-display);
-    font-size: 0.82rem;
+    font-size: 0.92rem;
     font-weight: 700;
     color: var(--color-neutral-light);
   }
 
   .flow-desc {
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     color: var(--color-neutral-light);
-    opacity: 0.7;
-    line-height: 1.4;
+    opacity: 0.72;
+    line-height: 1.5;
   }
 
   .flow-arrow {
@@ -347,19 +350,19 @@
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-md);
-    padding: var(--spacing-md) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
     background: rgba(59, 130, 246, 0.08);
     border: 1px solid rgba(96, 165, 250, 0.2);
     border-radius: var(--radius-sm);
   }
 
-  .insight-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  .insight-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 1px; }
 
   .bottom-insight p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--color-neutral-light);
-    opacity: 0.85;
-    line-height: 1.55;
+    opacity: 0.88;
+    line-height: 1.6;
     margin-bottom: 0;
   }
 
