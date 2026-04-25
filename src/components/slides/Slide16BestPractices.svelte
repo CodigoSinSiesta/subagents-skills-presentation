@@ -11,6 +11,7 @@
     { text: 'Verifica el output de cada subagente antes de integrarlo' },
     { text: 'Empieza con un solo agente. Escala a orquestación solo cuando sea necesario' },
     { text: 'Mantén tus skills versionados y documentados' },
+    { text: 'Alinea ANTES de codificar (design + outline cortos), no DESPUÉS revisando un plan de 1.000 líneas' },
   ];
 
   const donts = [
@@ -20,6 +21,7 @@
     { text: 'Compartir el historial completo de conversación con subagentes' },
     { text: 'Ignorar el coste en tokens de la multi-agentación' },
     { text: 'Copiar skills entre proyectos sin adaptarlos al contexto local' },
+    { text: 'Aprobar planes a ciegas: 1.000 líneas de plan ≈ 1.000 líneas de código (no hay ahorro)' },
   ];
 </script>
 

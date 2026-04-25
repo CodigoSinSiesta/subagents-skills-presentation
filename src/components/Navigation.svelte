@@ -4,7 +4,7 @@
   import { animateSlideEntrance, addButtonHoverAnimation } from '../utils/animations';
 
   let currentSlide = $state(0);
-  let totalSlides = 16;
+  let totalSlides = 18;
   let slides = $state([]);
   let menuOpen = $state(false);
 
@@ -20,6 +20,7 @@
     'hero',
     'the-problem',
     'what-is-subagent',
+    'roles-ibm',
     'orchestration-patterns',
     'orchestration-benefits',
     'skills-concept',
@@ -29,6 +30,7 @@
     'subagent-skills-synergy',
     'context-management',
     'real-world-patterns',
+    'persona-reviewers',
     'common-pitfalls',
     'best-practices',
     'workshop-preview',
@@ -39,6 +41,7 @@
     'hero': 'Inicio',
     'the-problem': 'El Problema',
     'what-is-subagent': 'Qué es un Subagente',
+    'roles-ibm': 'Roles de un Agente (IBM)',
     'orchestration-patterns': 'Patrones de Orquestación',
     'orchestration-benefits': 'Beneficios',
     'skills-concept': 'Concepto de Skills',
@@ -48,6 +51,7 @@
     'subagent-skills-synergy': 'Sinergia Subagente+Skills',
     'context-management': 'Gestión de Contexto',
     'real-world-patterns': 'Patrones Reales',
+    'persona-reviewers': 'Persona-based Reviewers',
     'common-pitfalls': 'Errores Comunes',
     'best-practices': 'Buenas Prácticas',
     'workshop-preview': 'Preview del Taller',
