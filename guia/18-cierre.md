@@ -4,12 +4,14 @@
 2 minutos
 
 ## Puntos clave
-- **5 Takeaways principales**:
+- **7 Takeaways principales**:
   1. Subagentes son especialistas, no mini-dioses. Úsalos cuando aporten valor.
   2. Skills son conocimiento estructurado. Sin ejemplos, no valen.
   3. CLAUDE.md es el archivo más importante de tu proyecto. Cuídalo.
   4. Contexto es poder, pero también es costo. Filtra sin piedad.
   5. Revisa SIEMPRE. El código no es tuyo hasta que lo entiendes.
+  6. **Subagentes = roles del equipo** (taxonomía IBM como checklist).
+  7. **Persona-based reviewer agents** en CI: convergencia OpenAI + YC + HumanLayer (pieza estable).
 
 - **Call to Action**:
   - Crea tu CLAUDE.md HOY en tu proyecto actual
@@ -27,6 +29,9 @@
   - OpenCode: github.com/sst/opencode
   - Cursor: cursor.com
   - awesome-claude-code: github.com/... (skills de la comunidad)
+  - 12-Factor Agents: github.com/humanlayer/12-factor-agents (Horthy)
+  - Harness Engineering: openai.com/index/harness-engineering (Lopopolo)
+  - gstack: github.com/garrytan/gstack (Garry Tan, YC)
 
 ## Datos relevantes
 - Esta presentación fue creada CON subagentes y skills

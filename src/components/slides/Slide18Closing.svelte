@@ -10,12 +10,17 @@
     'CLAUDE.md es tu contrato con el agente. Escríbelo bien.',
     'El contexto es oro. Pasa solo lo necesario, ni más ni menos.',
     'Empieza simple. Un agente → skills → subagentes → orquestación completa.',
+    'Subagentes = roles del equipo. Diseña con la taxonomía IBM como checklist.',
+    'Persona-based reviewers en CI: convergencia OpenAI + YC + HumanLayer.',
   ];
 
   const resources = [
     { label: 'Claude Code', url: 'claude.ai/code' },
     { label: 'OpenCode', url: 'github.com/sst/opencode' },
     { label: 'tellmealex.dev', url: 'tellmealex.dev' },
+    { label: '12-factor agents', url: 'github.com/humanlayer/12-factor-agents' },
+    { label: 'Harness Engineering', url: 'openai.com/index/harness-engineering' },
+    { label: 'gstack', url: 'github.com/garrytan/gstack' },
   ];
 </script>
 

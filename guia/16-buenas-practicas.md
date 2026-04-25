@@ -13,6 +13,7 @@
   - Iterar: primera versión no es la final
   - Documentar arquitectura para el agente
   - Usar skills de la comunidad como base
+  - **Alinea ANTES de codificar** (Horthy 2026): design + outline cortos antes del plan completo
 
 - **DON'T: No hacer**:
   - No ignores el contexto global
@@ -22,6 +23,7 @@
   - No cargues todo el proyecto en contexto
   - No copies skills sin entenderlos
   - No dejes el CLAUDE.md desactualizado
+  - **No apruebes planes a ciegas**: 1.000 líneas de plan ≈ 1.000 líneas de código (Horthy admite haberse equivocado en marzo 2026 al recomendar lo contrario)
 
 - **Checklist rápido**:
   ```
