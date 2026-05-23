@@ -1,0 +1,23 @@
+src/components/slides/Slide03WhatIsSubagent.svelte
+  s_0851cae21a93e5::t_8d2f86dea7d193 2-3,6-120
+src/components/slides/Slide11SubagentSkillsSynergy.svelte
+  s_0851cae21a93e5::t_81d9046a41d6ba 2-9,12-102
+src/components/slides/Slide13RealWorldPatterns.svelte
+  s_0851cae21a93e5::t_e0a24aa922868b 2-3,5,7-9,11-19,22-24,26-34,37-39,41-49,51-128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "c3f514f74f3afc3a87ba252ba3c6b5d617d31bc9",
+  "prompts": {},
+  "sessions": {
+    "s_0851cae21a93e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8adf6cab-2a03-46e5-8509-a8c3aad9a219",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alejandro de la Fuente de la Rosa <alejandro.delafuentedelarosa@emeal.nttdata.com>"
+    }
+  }
+}
