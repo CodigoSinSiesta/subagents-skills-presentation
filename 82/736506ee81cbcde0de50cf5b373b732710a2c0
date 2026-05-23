@@ -1,0 +1,20 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "82736506ee81cbcde0de50cf5b373b732710a2c0",
+  "prompts": {
+    "e5561b37802b4941": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_2740c2a0effeyrRP0X3Ur5y1pT",
+        "model": "ITX/bedrock/claude-sonnet-4.6"
+      },
+      "human_author": "Alejandro de la Fuente de la Rosa <alejandro.delafuentedelarosa@emeal.nttdata.com>",
+      "total_additions": 399,
+      "total_deletions": 0,
+      "accepted_lines": 399,
+      "overriden_lines": 0
+    }
+  }
+}
