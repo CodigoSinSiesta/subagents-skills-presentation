@@ -1,0 +1,55 @@
+src/components/slides/Slide17WorkshopPreview.svelte
+  s_0851cae21a93e5::t_9e8b8b41615fad 2,5-28
+src/components/slides/Slide12ContextManagement.svelte
+  s_0851cae21a93e5::t_38e5144818322e 2,5-28
+src/components/slides/Slide03WhatIsSubagent.svelte
+  s_0851cae21a93e5::t_1f6fd5e1f9ccd9 2,5-26
+src/components/slides/Slide13RealWorldPatterns.svelte
+  s_0851cae21a93e5::t_671a1d9eb1ff04 2-11,13-18,21-26,29-37
+src/components/slides/Slide10SkillsPractice.svelte
+  s_0851cae21a93e5::t_94a82a2d234c52 2-3,5-11,14-15,19-20,24-25,29-30,32-33
+src/components/slides/Slide02TheProblem.svelte
+  s_0851cae21a93e5::t_a3d9f288415a5f 2,5-24
+src/components/slides/Slide15CommonPitfalls.svelte
+  s_0851cae21a93e5::t_4d37c4ff6319b0 2-3,5-10,13,17,21,25,29,31-32
+src/components/slides/Slide16BestPractices.svelte
+  s_0851cae21a93e5::t_3c9d2bda08152d 2,5-33
+src/components/slides/Slide08SkillAnatomy.svelte
+  s_0851cae21a93e5::t_5d5753aeca5304 2,5-10,12,15-16,18,21,23,26-38
+src/components/slides/Slide05OrchestrationPatterns.svelte
+  s_0851cae21a93e5::t_a66ac830b5ffba 2,5-17
+src/components/slides/Slide04RolesIbm.svelte
+  s_0851cae21a93e5::t_3a0e83816de211 2,5-20
+src/components/slides/Slide06OrchestrationBenefits.svelte
+  s_0851cae21a93e5::t_739316fae371a6 2-3,5-10,13,17,20-21,23-24
+src/components/slides/Slide07SkillsConcept.svelte
+  s_0851cae21a93e5::t_9ff459dd6bcb0e 2,5-25
+src/components/slides/Slide01Hero.svelte
+  s_0851cae21a93e5::t_306fc6d65a96db 2,5-21
+src/components/slides/Slide09ReferenceSkills.svelte
+  s_0851cae21a93e5::t_2eefbae7724ad3 2,5-24
+src/components/slides/Slide18Closing.svelte
+  s_0851cae21a93e5::t_dba27857ee126a 2,5-23
+package.json
+  s_0851cae21a93e5::t_c76520758d579f 8
+src/components/slides/Slide11SubagentSkillsSynergy.svelte
+  s_0851cae21a93e5::t_ca76bee3bb7abc 2,5-31
+src/components/slides/Slide14PersonaReviewers.svelte
+  s_0851cae21a93e5::t_7993e6ed12a79a 2-3,5-11,13-14,17-18,21-23,25-27,29-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "581062ca0f208e217676bd6428067ed5e9ca11bd",
+  "prompts": {},
+  "sessions": {
+    "s_0851cae21a93e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8adf6cab-2a03-46e5-8509-a8c3aad9a219",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Alejandro de la Fuente de la Rosa <alejandro.delafuentedelarosa@emeal.nttdata.com>"
+    }
+  }
+}
