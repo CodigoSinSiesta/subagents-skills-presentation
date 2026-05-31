@@ -230,6 +230,85 @@ a:hover { color: var(--color-electrico); }
 }
 
 /* ============================================
+   Slide fit pass (verified with Playwright)
+   ============================================
+   The canonical V4 shells are generous. This deck has a few dense slides
+   (pattern grid + hands-on + closing resources), so compact them just enough
+   to keep the 16:9 presentation view inside the viewport.
+*/
+
+@media (min-width: 1024px) {
+  /* Slide 05: four pattern cards fit better as a single scanline on decks. */
+  .pattern-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: clamp(0.75rem, 1.2vw, 1.25rem) !important;
+  }
+
+  .pattern-card {
+    padding: clamp(0.85rem, 1.1vw, 1.25rem) !important;
+    gap: 0.6rem !important;
+  }
+
+  .pattern-card .diagram {
+    aspect-ratio: 1.9 / 1 !important;
+    padding: 0.65rem !important;
+  }
+
+  .pattern-card h4 { font-size: 1rem !important; }
+  .pattern-card p  { font-size: 0.82rem !important; line-height: 1.35 !important; }
+
+  /* Slides 10/14/17: steps are dense; use two columns on desktop/tablet landscape. */
+  .handson-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+
+  .step {
+    grid-template-columns: 44px minmax(0, 1fr) !important;
+    gap: 0.75rem !important;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .step-num { font-size: 1.25rem !important; }
+  .step h4  { font-size: 1rem !important; margin-bottom: 0.25rem !important; }
+  .step p   { font-size: 0.82rem !important; line-height: 1.35 !important; margin-bottom: 0.5rem !important; }
+
+  pre.shell {
+    padding: 0.65rem 0.8rem !important;
+    font-size: 0.72rem !important;
+    line-height: 1.35 !important;
+    white-space: pre-wrap !important;
+  }
+}
+
+@media (max-height: 900px) and (min-width: 769px) {
+  .csi-slide-content {
+    padding-top: clamp(1rem, 2.2vh, var(--spacing-2xl)) !important;
+    padding-bottom: clamp(1rem, 2.2vh, var(--spacing-2xl)) !important;
+    gap: clamp(0.75rem, 1.8vh, var(--spacing-xl)) !important;
+  }
+
+  .header { gap: 0.55rem !important; }
+  .intro  { line-height: 1.35 !important; }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Closing slide: keep resources side-by-side on tablet landscape. */
+  .resources-grid {
+    grid-template-columns: 1.25fr 0.85fr !important;
+    gap: 1rem !important;
+  }
+
+  .qr-col { order: 0 !important; }
+}
+
+/* Decorative hero orb may intentionally extend outside; clip it so it does not
+   create visible overflow in Playwright/browser scroll metrics. */
+.swiper-slide-active {
+  overflow-x: hidden !important;
+}
+
+/* ============================================
    Navigation.svelte — hide its built-in counter.
    The V4 chrome (.slide-breadcrumb .counter in
    PresentationLayout) is now the canonical one.
