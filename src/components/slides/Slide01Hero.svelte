@@ -16,6 +16,7 @@
   author={{
     name: 'Alejandro de la Fuente',
     role: 'Technical Leader · NTT Data · GDNE',
+    avatarUrl: '/subagents-skills-presentation/assets/alejandro-avatar.png',
     links: [{ url: 'https://codigosinsiesta.github.io', label: 'codigosinsiesta.github.io' }]
   }}
 />

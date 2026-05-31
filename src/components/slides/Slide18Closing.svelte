@@ -19,5 +19,5 @@
     { icon: '📖', title: '12-Factor Agents', url: 'https://github.com/humanlayer/12-factor-agents', tag: 'github' },
     { icon: '🚀', title: 'Más presentaciones', url: 'https://codigosinsiesta.github.io', tag: 'web' }
   ]}
-  qr={{ title: 'Código Sin Siesta', url: 'https://codigosinsiesta.github.io' }}
+  qr={{ title: 'Slides online', url: 'https://codigosinsiesta.github.io/subagents-skills-presentation/' }}
 />

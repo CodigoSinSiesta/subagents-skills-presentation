@@ -302,6 +302,16 @@ a:hover { color: var(--color-electrico); }
   .qr-col { order: 0 !important; }
 }
 
+/* Replace the theme QR placeholder with a real, scannable QR generated for the
+   deployed deck URL. The theme component intentionally ships a fake QR grid. */
+.qr-col .csi-qr .card {
+  background: #fff url('/subagents-skills-presentation/assets/qr-subagents-skills-presentation.svg') center / calc(100% - 24px) calc(100% - 24px) no-repeat !important;
+}
+
+.qr-col .csi-qr .grid {
+  display: none !important;
+}
+
 /* Decorative hero orb may intentionally extend outside; clip it so it does not
    create visible overflow in Playwright/browser scroll metrics. */
 .swiper-slide-active {
